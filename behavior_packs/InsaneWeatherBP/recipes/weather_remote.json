@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.40",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "insane_weather:weather_remote" },
+    "tags": ["crafting_table"],
+    "pattern": ["RCR", "GLG", "RNR"],
+    "key": {
+      "R": { "item": "minecraft:redstone" },
+      "C": { "item": "minecraft:clock" },
+      "G": { "item": "minecraft:gold_ingot" },
+      "L": { "item": "minecraft:lightning_rod" },
+      "N": { "item": "minecraft:nether_star" }
+    },
+    "result": { "item": "insane_weather:weather_remote", "count": 1 }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": { "identifier": "insane_weather:storm_fog" },
+    "distance": {
+      "air": {
+        "fog_start": 0.0,
+        "fog_end": 85.0,
+        "fog_color": "#19243A",
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 0.0,
+        "fog_end": 55.0,
+        "fog_color": "#4A1020",
+        "render_distance_type": "fixed"
+      }
+    },
+    "volumetric": {
+      "density": {
+        "air": { "max_density": 0.22, "uniform": true }
+      }
+    }
+  }
+}

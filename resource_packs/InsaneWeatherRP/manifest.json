@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Insane Weather RP",
+    "description": "Insane Weather v1.0.0 textures, fog, and item assets.",
+    "uuid": "c15e0e54-a2cc-40c5-8cfd-3ed36b7fd2ac",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      40
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "398df37d-860c-4f08-b83c-94b8fbda6f32",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
