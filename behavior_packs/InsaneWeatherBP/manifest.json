@@ -1,0 +1,54 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Insane Weather BP",
+    "description": "Insane Weather v1.0.0: scripted extreme weather controller for Minecraft Bedrock.",
+    "uuid": "06d0a831-a365-4ee6-a079-370c327a317c",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      40
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "a4c8f7cf-c459-4044-9f61-cec8968fe6f8",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "beca7d41-20f0-4949-b0e2-7f581e203517",
+      "entry": "scripts/main.js",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "c15e0e54-a2cc-40c5-8cfd-3ed36b7fd2ac",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.8.0"
+    }
+  ]
+}

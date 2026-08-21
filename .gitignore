@@ -1,0 +1,3 @@
+# Generated release assets; run tools/build_release.py to recreate them.
+resource_packs/InsaneWeatherRP/textures/items/weather_remote.png
+releases/v1.0.0/*.mcpack
