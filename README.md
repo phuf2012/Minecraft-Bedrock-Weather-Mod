@@ -14,7 +14,7 @@ The first release is stored in `releases/v1.0.0`:
 - `InsaneWeatherBP-v1.0.0.mcpack`
 - `InsaneWeatherRP-v1.0.0.mcpack`
 
-Codex PR creation does not support binary files, so release packs are generated instead of stored directly in git. On GitHub, the included workflow uploads both `.mcpack` files as the `InsaneWeather-v1.0.0-mcpacks` artifact for PRs and publishes a real GitHub Release named `Insane Weather v1.0.0` after the PR is merged to `main`. Locally, run `python3 tools/build_release.py` to recreate both files in `releases/v1.0.0`.
+Codex PR creation does not support binary files, so release packs are generated instead of stored directly in git. On GitHub, the included workflow uploads both `.mcpack` files as the `InsaneWeather-v1.0.0-mcpacks` artifact. Locally, run `python3 tools/build_release.py` to recreate both files in `releases/v1.0.0`.
 
 ## Weather Remote
 

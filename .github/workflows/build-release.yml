@@ -6,9 +6,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,26 +16,10 @@ jobs:
       - name: Build .mcpack files
         run: python3 tools/build_release.py
 
-      - name: Upload v1.0.0 packs artifact
+      - name: Upload v1.0.0 packs
         uses: actions/upload-artifact@v4
         with:
           name: InsaneWeather-v1.0.0-mcpacks
           path: |
             releases/v1.0.0/InsaneWeatherBP-v1.0.0.mcpack
             releases/v1.0.0/InsaneWeatherRP-v1.0.0.mcpack
-
-      - name: Publish GitHub Release v1.0.0
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          if gh release view v1.0.0 >/dev/null 2>&1; then
-            gh release edit v1.0.0 --title "Insane Weather v1.0.0" --notes-file releases/v1.0.0/README.md
-          else
-            gh release create v1.0.0 --title "Insane Weather v1.0.0" --notes-file releases/v1.0.0/README.md
-          fi
-
-          gh release upload v1.0.0 \
-            releases/v1.0.0/InsaneWeatherBP-v1.0.0.mcpack \
-            releases/v1.0.0/InsaneWeatherRP-v1.0.0.mcpack \
-            --clobber

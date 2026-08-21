@@ -17,4 +17,4 @@ That creates:
 
 ## Download from GitHub
 
-While the PR is open, open the latest **Build Bedrock Packs** workflow run and download the `InsaneWeather-v1.0.0-mcpacks` artifact. After the PR is merged to `main`, the workflow also creates/updates a real GitHub Release named `Insane Weather v1.0.0` and attaches both `.mcpack` files. Enable both packs on the same world. If your Bedrock build gates JavaScript add-ons behind experiments, enable Beta APIs/Script APIs before loading the world.
+After the PR is merged, open the latest **Build Bedrock Packs** workflow run and download the `InsaneWeather-v1.0.0-mcpacks` artifact. Enable both packs on the same world. If your Bedrock build gates JavaScript add-ons behind experiments, enable Beta APIs/Script APIs before loading the world.
